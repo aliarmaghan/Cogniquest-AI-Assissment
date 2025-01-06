@@ -26,7 +26,7 @@ To run the project locally, follow these steps:
 ### Steps
 1. **Clone the repository**:
    ```bash
-   git clone [<repository_url>](https://github.com/aliarmaghan/Cogniquest-AI-Assissment.git)
+   git clone https://github.com/aliarmaghan/Cogniquest-AI-Assissment.git
    cd <Resume_Matching>
    ```
 
