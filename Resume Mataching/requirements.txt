@@ -1,0 +1,15 @@
+streamlit
+docling
+spacy
+pandas
+en-core-web-sm
+pdfplumber
+ipykernel
+langchain
+langchain_groq
+groq
+python-dotenv
+langchain_community
+faiss-cpu
+sentence-transformers
+langchain_huggingface
