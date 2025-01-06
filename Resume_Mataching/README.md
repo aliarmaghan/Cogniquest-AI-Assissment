@@ -14,7 +14,7 @@ The solution extracts structured information from resumes, embeds job descriptio
 
 ## Deployment
 The application is live and accessible at:  
-[https://matchcv.streamlit.app/](https://matchcv.streamlit.app/)
+[https://matchcv.streamlit.app/]
 
 ## Installation and Setup
 To run the project locally, follow these steps:
