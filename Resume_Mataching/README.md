@@ -14,7 +14,7 @@ The solution extracts structured information from resumes, embeds job descriptio
 
 ## Deployment
 The application is live and accessible at:  
-[https://matchcv.streamlit.app/](https://matchcv.streamlit.app/)
+[https://matchcv.streamlit.app/]
 
 ## Installation and Setup
 To run the project locally, follow these steps:
@@ -26,8 +26,8 @@ To run the project locally, follow these steps:
 ### Steps
 1. **Clone the repository**:
    ```bash
-   git clone <repository_url>
-   cd <repository_name>
+   git clone https://github.com/aliarmaghan/Cogniquest-AI-Assissment.git
+   cd Resume_Matching
    ```
 
 2. **Install dependencies**:
