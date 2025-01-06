@@ -2,7 +2,6 @@ streamlit
 docling
 spacy
 pandas
-en-core-web-sm
 pdfplumber
 ipykernel
 langchain
