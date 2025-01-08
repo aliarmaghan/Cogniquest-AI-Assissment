@@ -2,7 +2,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain.vectorstores import FAISS
 from langchain.schema import Document
-import os
+import os, streamlit as st
 
 # Initialize the embedding model
 os.environ['HF_TOKEN']=os.getenv("HF_TOKEN")
@@ -11,12 +11,14 @@ embedding_model = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 # Function to split and embed resumes
 def split_and_embed_resume(resume_text, vectorstore_path="resume_faiss_index"):
    # Split the document into smaller chunks
-   text_splitter = RecursiveCharacterTextSplitter(
-      chunk_size=500,  # Chunk size
-      chunk_overlap=50  # Overlap between chunks
-   )
-   docs = [Document(page_content=chunk) for chunk in text_splitter.split_text(resume_text)]
+   # text_splitter = RecursiveCharacterTextSplitter(
+   #    chunk_size=500,  # Chunk size
+   #    chunk_overlap=50  # Overlap between chunks
+   # )
+   # docs = [Document(page_content=chunk) for chunk in text_splitter.split_text(resume_text)]
    
+   # Create a document object for the resume
+   docs = [Document(page_content=resume_text)]
    # Create embeddings and store in FAISS
    vectorstore = FAISS.from_documents(docs, embedding_model)
    vectorstore.save_local(vectorstore_path)  # Save the vectorstore to disk
